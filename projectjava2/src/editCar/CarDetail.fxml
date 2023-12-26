@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="cardetails.controller.CardetailController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <Text layoutX="346.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cars Detail">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="" layoutX="213.0" layoutY="40.0" prefHeight="31.0" prefWidth="231.0" promptText="Search" />
+                  <Button layoutX="440.0" layoutY="40.0" mnemonicParsing="false" text="Search" />
+                  <Hyperlink layoutX="14.0" layoutY="14.0" text="&lt;&lt;Back" />
+                  <ListView layoutX="28.0" layoutY="84.0" prefHeight="289.0" prefWidth="407.0" />
+                  <ImageView fitHeight="229.0" fitWidth="428.0" layoutX="28.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../ảnh%20xe/80498190_2940600559283613_2997044839326941184_o.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="472.0" layoutY="84.0" text="Car 1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ipSubmit" layoutX="368.0" layoutY="507.0" mnemonicParsing="false" text="Submit" />
+                  <DatePicker fx:id="ipDate" layoutX="472.0" layoutY="213.0" promptText="Date Order" />
+                  <TextField fx:id="ipName" layoutX="472.0" layoutY="162.0" promptText="Name Customer" />
+                  <TextArea fx:id="ipPosition" layoutX="472.0" layoutY="267.0" prefHeight="200.0" prefWidth="200.0" promptText="Position" />
+                  
+                  <MenuButton layoutX="472.0" layoutY="122.0" mnemonicParsing="false" text="Status">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Available" />
+                      <MenuItem mnemonicParsing="false" text="Invalid" />
+                    </items>
+                  </MenuButton>
+                  
+               </children>
+            </Pane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
